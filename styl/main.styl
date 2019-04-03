@@ -1,0 +1,201 @@
+.cards
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 100px
+	z-index: 7;
+	text-align: center;
+	img
+		max-width 100%
+#main
+	padding 0 0 45px
+	background-color #fff
+	background-image url(../img/main_bg.jpg)
+	background-repeat no-repeat
+	background-position: center top
+	background-size: cover
+#header
+	padding 30px 0
+#logo
+	width 100%
+	max-width 200px
+.pre
+	font-size: 13px
+	span
+		font-family: "OpenSansBold", sans-serif
+.main_title
+	font-size: 28px;
+	font-family: "OpenSansExtraBold", sans-serif
+	line-height: 32px;
+	margin 50px 0 30px
+	span
+		display: inline-block
+		background-color: rgb(255,56,27)
+		color #fff
+		padding 0 0 5px
+.main_subtitle
+	font-size: 15px;
+	line-height: 1.6;
+.main_img_container
+	position: relative
+	width: 800px
+	height 301px
+	img
+		width 100%
+		height 100%
+		position: absolute
+		left - 90px
+		bottom: -20px
+.video_wrapper_main
+	box-shadow: 1.169px 3.825px 30px 0px rgba(157, 116, 116, 0.67);
+	margin-top: 45px
+.main_form_container
+	margin-top: 45px
+	border-radius: 4px
+	background-color #fff
+	padding 10px
+	box-shadow: 2.339px 7.65px 54px 0px rgba(157, 116, 116, 0.54);
+.main_form_wrapper
+	border-radius: 4px
+	border: 1px solid rgba(0,0,0,.05)
+	padding 20px
+.when
+	overflow hidden
+.date 
+	font-size: 17px;
+	line-height: 1.2;
+	float left
+	span
+		color rgb(255,255,255)
+		background-color: rgb(255,56,27)
+		display: inline-block
+		border-radius: 4px
+		padding 7px 10px
+		font-family: "OpenSansBold", sans-serif
+		margin-right: 6px
+.time
+	float: right
+	font-size: 17px
+	font-family: "OpenSansLight", sans-serif;
+	line-height: 35px;
+	span
+		font-family: "OpenSansBold", sans-serif
+.form_title
+	font-size: 16px;
+	font-family: "OpenSansBold", sans-serif;
+	line-height: 1.2;
+	text-align: center;
+	margin 20px 0
+.mail
+	border-radius: 4px;
+	background-color: rgb(255, 252, 248);
+	width: 100%
+	max-width: 359px;
+	height: 44px;
+	line-height: 44px;
+	float left
+	border 1px solid rgba(80,61,37,.1)
+	text-indent: 20px
+	font-size: 13px;
+	color: rgba(2, 2, 2, 0.8);
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(2, 2, 2, 0.8);
+		background: rgb(255, 252, 248);
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+
+}
+.button_mail
+	float: right
+	max-width: 220px
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+	font-family: 'AvenirNextCyrBold', sans-serif;
+}
+.checking {
+	display: table;
+	width 100%
+	margin: 12px auto 0;
+	text-align: right
+}
+
+.checking .check_label {
+	color: rgba(0,0,0,.7)
+	line-height: 25px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 22px 0 0
+	text-align: right;
+	font-size: 11px
+}
+
+.checking .check_label a {
+	color: rgba(0,0,0,.7)
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: rgb(255,255,255);
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 12px;
+	height: 12px;
+	border 1px solid rgba(0,0,0,.1)
+	border-radius: 3px
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	right 2px;
+	top: -10px;
+	width: 7px;
+	height: 9px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 2px solid rgb(242,79,59)
+	border-right: 2px solid rgb(242,79,59)
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check_label:before {
+	background-color: #fff;
+
+}
+
+.check:checked + .check_label:after {
+	opacity: 1;
+	top: 7px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}

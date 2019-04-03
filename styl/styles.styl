@@ -1,8 +1,78 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansBold.woff') format('woff'),
+		 url('../fonts/OpenSansBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansExtraBold';
+	src: url('../fonts/OpenSansExtraBold.eot');
+	src: url('../fonts/OpenSansExtraBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansExtraBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansExtraBold.woff') format('woff'),
+		 url('../fonts/OpenSansExtraBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansExemiBold';
+	src: url('../fonts/OpenSemiExtraBold.eot');
+	src: url('../fonts/OpenSemiExtraBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSemiExtraBold.woff2') format('woff2'),
+		 url('../fonts/OpenSemiExtraBold.woff') format('woff'),
+		 url('../fonts/OpenSemiExtraBold.ttf') format('truetype'),
+		 url('../fonts/OpenSemiExtraBold.svg#OpenSemiExtraBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSansLight.eot');
+	src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansLight.woff') format('woff'),
+		 url('../fonts/OpenSansLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+
+
+@import '../css/_css/bootstrap.min.css'
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-family: "OpenSans", sans-serif
+	color #000
+.wrapper
+	position relative
+	overflow hidden
+	// z-index 9
 a
 	color: #fefefe
 	&:focus
@@ -42,10 +112,37 @@ section
 		height 100%
 		display block
 		background-color #000
-		border-radius 3px
+		border-radius 4px
 		border: 0
 		top 0
 		left 0
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	margin 0 auto
+	border-radius: 4px;
+	background-color: rgb(255,51,23)
+	background-image: linear-gradient( to bottom, rgb(255,56,27) 0%, rgb(236,46,21) 100%);
+	width 100%
+	max-width: 202px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 15px;
+	font-family: "OpenSansBold";
+	color: rgb(255, 255, 255);
+	text-align: center
+	text-decoration: none
+	&:focus
+		text-decoration: none
+		color rgb(255,255,255)
+	&:hover
+		text-decoration: none
+		color rgb(255,255,255)
+		background-image: linear-gradient( to top, rgb(255,56,27) 0%, rgb(236,46,21) 100%);
+@import 'main'
+@import 'second'
+@import 'get'
+@import 'author'
+@import 'revs'

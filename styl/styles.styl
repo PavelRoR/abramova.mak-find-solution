@@ -69,10 +69,6 @@
 body
 	font-family: "OpenSans", sans-serif
 	color #000
-.wrapper
-	position relative
-	overflow hidden
-	// z-index 9
 a
 	color: #fefefe
 	&:focus
@@ -85,8 +81,24 @@ h1,h2,h3,h4,h5,h6
 button
 	border none
 section
+header
+footer
 	width 100%
 	display block
+.wrapper
+	position relative
+	overflow hidden
+	z-index 9
+.cards
+	position: absolute;
+	left: -150px;
+	right: 0;
+	margin: auto;
+	top: -500px
+	z-index: 0;
+	text-align: center;
+	img
+		max-width calc(100% + 150px)
 .video_wrapper
 	margin 0 auto
 	position relative
@@ -141,6 +153,12 @@ section
 		text-decoration: none
 		color rgb(255,255,255)
 		background-image: linear-gradient( to top, rgb(255,56,27) 0%, rgb(236,46,21) 100%);
+.general_title
+	text-align: center
+	font-size: 31px;
+	font-family: "OpenSansExtraBold", sans-serif;
+	line-height: 1.2;
+	margin-bottom: 50px
 @import 'main'
 @import 'second'
 @import 'get'

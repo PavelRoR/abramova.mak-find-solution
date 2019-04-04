@@ -46,12 +46,13 @@ html(lang="ru")
 		.wrapper
 			.cards(data-paroller-factor="0.5" data-paroller-type="foreground")
 				img(src="img/cards.png", alt="Карты")
-			include pug/main
-			include pug/second
-			include pug/get
-			include pug/author
-			include pug/revs
-		include pug/scripts
+			include pug/main/main
+			include pug/main/second
+			include pug/main/get
+			include pug/main/author
+			include pug/main/revs
+		include pug/main/footer
+		include pug/main/scripts
 		<!--BEGIN JIVOSITE CODE-->
 		//script
 			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();

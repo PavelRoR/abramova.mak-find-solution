@@ -8,12 +8,12 @@ $(document).ready(function() {
    $(function () {
     var check = $('.check', this),
         email = $('.mail', this),
-        message = $('.alert_message', this),
         button = $('.button_mail', this);
-    $(".form").on("submit", function () {
-        var check = $('.check', this),
-            message = $('.alert_message', this),
-            reNone = /.+/;
+        $(".form").on("submit", function () {
+            var  reNone = /.+/,
+                check = $('.check', this),
+                email = $('.mail', this),
+                button = $('.button_mail', this);
         if (!email.val().match(reNone)) {
             email.css('borderColor', 'red');
             // message.text('Введите email').slideDown(500);
@@ -21,9 +21,10 @@ $(document).ready(function() {
             return false;
         }
         if (!check.prop("checked")) {
-            check.next().css("color", "#000");
-            check.next().children().css("color", "#000");
-            message.text('Подтвердите соглашение').slideDown(500);
+            button.text('Подтвердите соглашение');
+            check.next().css("color", "red");
+            check.next().children().css("color", "red");
+            // message.text('Подтвердите соглашение').slideDown(500);
             return false;
         }
         if (email.val() && check) {
@@ -40,9 +41,10 @@ $(document).ready(function() {
         button.text('Участвовать бесплатно');
     });
     check.click(function () {
-        check.next().css("color", "rgba(255,255,255, .9)");
-        check.next().children().css("color", "rgba(255,255,255, .9)");
-        message.slideUp(500);
+        check.next().css("color", "rgba(0,0,0,.7)");
+        check.next().children().css("color", "rgba(0,0,0,.7)");
+        // message.slideUp(500);
+        button.text('Участвовать бесплатно');
     });
 });
 

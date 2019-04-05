@@ -34,8 +34,8 @@ section#main
 								span 18:00 
 								| по Киеву
 						h4.form_title Регистрируйтесь на интенсив и получите бонус “Законы счастья”, а также материалы для подготовки к интенсиву
-						form(action="" method="POST").form.main_form
-							input.mail(placeholder="Ваш E-mail" type="mail")
+						form(action="/thanks/index.html" method="POST").form.main_form
+							input.mail(placeholder="Ваш E-mail" type="text" name="mail")
 							button.button.button_mail(type="submit") Участвовать бесплатно
 							.clearfix
 							.checking

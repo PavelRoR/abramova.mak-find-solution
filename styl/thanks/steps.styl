@@ -1,0 +1,112 @@
+#steps
+	padding 0 0 60px
+.main_form_container
+	width 100%
+	max-width 760px
+	margin 0 auto 60px
+	border-radius: 4px
+	background-color #fff
+	padding 10px
+	box-shadow: 2.339px 7.65px 54px 0px rgba(157, 116, 116, 0.54);
+.main_form_wrapper
+	border-radius: 4px
+	border: 1px solid rgba(0,0,0,.05)
+	padding 20px
+.form_title
+	font-size: 16px;
+	font-family: "OpenSansBold", sans-serif;
+	line-height: 1.2;
+	text-align: center;
+	margin 20px 0
+.phone
+	border-radius: 4px;
+	background-color: rgb(255, 252, 248);
+	width: 100%
+	max-width: 55%;
+	height: 44px;
+	line-height: 44px;
+	float left
+	border 1px solid rgba(80,61,37,.1)
+	text-indent: 20px
+	font-size: 13px;
+	color: rgba(2, 2, 2, 0.8);
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(2, 2, 2, 0.8);
+		background: rgb(255, 252, 248);
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+
+}
+.button_mail
+	float: right
+	max-width: 43%
+.bot_title
+	font-size: 20px
+	margin-bottom: 20px
+	font-family: "OpenSansBold", sans-serif
+.bot_list
+	li
+		list-style: none
+		position relative
+		margin-bottom: 10px
+		padding-left: 23px
+		font-size: 16px;
+		line-height: 1.5;
+		&:before
+			content ''
+			display block
+			position: absolute
+			width 9px
+			height 9px
+			border-radius: 50px
+			background-color: rgb(255,56,27)
+			left 0
+			top 8px
+		&:last-child
+			margin-bottom: 0
+#banner
+	background-color: green
+	width 100%
+	height 100px
+	display block
+.bonus_title 
+	font-size: 18px
+	margin:15px 0 10px
+	font-family: "OpenSansBold", sans-serif
+.choise_mess
+	font-size: 18px
+	text-align: center
+	margin: 10px 0
+.messemgers
+	width 100%
+	max-width 420px
+	margin 0 auto
+	text-align: center
+.soc_button
+	display: inline-block
+	height auto
+	width 33.33334%
+	color #fff
+	padding 10px
+	svg
+		display block
+		width 20px
+		height 20px
+		margin 0 auto
+		fill #fff
+	&:focus
+	&:hover
+		opacity .9
+		text-decoration: none
+		color #fff
+.soc_button_fb
+	background-color: rgb(34,149,253)
+.soc_button_tg
+	background-color: rgb(26,167,235)
+.soc_button_vk
+	background-color: rgb(81,129,184)

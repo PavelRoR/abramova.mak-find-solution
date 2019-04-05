@@ -1,3 +1,4 @@
+//- $mail = $_POST['mail'];
 <!DOCTYPE html>
 html(lang="ru")
 	head
@@ -6,14 +7,12 @@ html(lang="ru")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(property="og:type" content="website")
-		meta(property="og:url" content="https://abramova.mastervision.su/mak-find-solution/")
-		meta(property="og:title" content="Как использовать метафорические ассоциативные карты, чтобы найти лучшее решение в любой ситуации?")
-		meta(property="og:description" content="3-хдневный онлайн-интенсив от дипломированного психолога и международного специалиста Жанны Абрамовой")
-		meta(property="og:image" content="https://abramova.mastervision.su/mak-find-solution/img/banner.jpg")
-		title «Как использовать метафорические ассоциативные карты, чтобы найти лучшее решение в любой ситуации?». 3-хдневный онлайн-интенсив от дипломированного психолога и международного специалиста Жанны Абрамовой
-		link(rel="icon" type="image/x-icon" href="favicon.ico")
-		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		link(rel="stylesheet" href="css/styles.css")
+		meta(property="og:title" content="ПОЗДРАВЛЯЮ!")
+		meta(property="og:description" content="Теперь вы в списке участников интенсива")
+		title ПОЗДРАВЛЯЮ! Теперь вы в списке участников интенсива
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+		link(rel="stylesheet" href="../css/thanks.css")
 		script(type="text/javascript")
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?160",t.onload=function(){VK.Retargeting.Init("VK-RTRG-350620-gJCgg"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 		noscript
@@ -36,20 +35,9 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		.wrapper
-			.cards(data-paroller-factor="0.5" data-paroller-type="foreground")
-				img(src="img/cards.png", alt="Карты")
-			include pug/main/main
-			include pug/main/second
-			include pug/main/get
-			include pug/main/author
-			include pug/main/revs
-		include pug/main/footer
-		include pug/main/scripts
-		<!--BEGIN JIVOSITE CODE-->
-		//script
-			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
+		include pug/thanks/main
+		include pug/thanks/steps
+		include pug/thanks/scripts
 		<!-- AutoWebOffice: UTM or OpenStat Counter -->
 		script(type="text/javascript")
 			| var url = "https://shop.mastervision.su/?r=api/utmopenstat";

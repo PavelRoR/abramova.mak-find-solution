@@ -1,0 +1,31 @@
+section#last
+	.container
+		.row
+			.col-md-5
+				img(src="img/janna_last.png", alt="Жанна Абрамова")#janna_last
+			.col-md-7
+				h3.general_title.general_title_last Метафорические ассоциативные карты
+				p.last_text Начните работать с людьми при помощи эффективного психологического метода
+				.main_form_container.last_form_container
+					.main_form_wrapper
+						.form_author
+							p Автор: 
+								span Жанна Абрамова
+						.last_when
+							p.last_current_date Даты: 
+								span 19 - 22
+							p.last_current_month 
+								span &nbsp;Апреля, 
+							p.last_time
+								span 19:00 
+								| по мск
+						.clearfix
+						form(action="/thanks/index.html" method="POST").form.last_form
+							input.mail.last_mail(placeholder="Ваш E-mail" type="email" name="mail")
+							button.button.button_mail.last_button_mail(type="submit") Забронировать место
+							.clearfix
+							.checking
+								input(type="checkbox" id="check_2" checked).check
+								label(for="check_2").check_label Я согласен с 
+									a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+									|  по 152 - Ф3

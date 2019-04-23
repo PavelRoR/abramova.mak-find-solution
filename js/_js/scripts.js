@@ -1,6 +1,8 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend bootstrap.min.js
 //@prepros-prepend scroller.min.js
+//@prepros-prepend jquery.fancybox.min.js
+//@prepros-prepend owl.carousel.min.js
 
 $(document).ready(function() {
     $("[data-paroller-factor]").paroller();
@@ -47,6 +49,44 @@ $(document).ready(function() {
         button.text('Участвовать бесплатно');
     });
 });
+$(function () {
+    $("[data-fancybox]").fancybox({
+        buttons: [
+            'slideShow',
+            'share',
+            'zoom',
+            'fullScreen',
+            // 'download',
+            'close'
+        ],
+        speed: 330,
+        loop: true,
+        opacity: "auto",
+        // autoScale: true,
+        mouseWheel: true,
+        transitionEffect: 'slide'
+    });
+});
+$(function(){
+    /*Текстовые отзывы Жанны*/
+    $('#text_revs').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        navText: ["‹", "›"],
+        dots: false,
+        items: 2,
+        responsive: {
+            0: {
+                items: 1
+            },
+            560: {
+                items: 2
+            }
+        }
+    });
+});
+
 
 /*Конец документа*/
 });

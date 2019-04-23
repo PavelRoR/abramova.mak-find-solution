@@ -5,7 +5,7 @@
 	background-repeat no-repeat
 	background-position: center top
 	background-size: cover
-#header
+header
 	padding 30px 0
 #logo
 	width 100%
@@ -39,6 +39,7 @@
 		bottom: -20px
 .video_wrapper_main
 	box-shadow: 1.169px 3.825px 30px 0px rgba(157, 116, 116, 0.67);
+	max-width 560px
 	margin-top: 45px
 .main_form_container
 	margin-top: 45px
@@ -56,14 +57,16 @@
 	font-size: 17px;
 	line-height: 1.2;
 	float left
-	span
-		color rgb(255,255,255)
-		background-color: rgb(255,56,27)
-		display: inline-block
-		border-radius: 4px
-		padding 7px 10px
-		font-family: "OpenSansBold", sans-serif
-		margin-right: 6px
+.current_date
+	color rgb(255,255,255)
+	background-color: rgb(255,56,27)
+	display: inline-block
+	border-radius: 4px
+	padding 7px 10px
+	font-family: "OpenSansBold", sans-serif
+	margin-right: 6px
+.current_month
+	display: inline-block
 .time
 	float: right
 	font-size: 17px
@@ -72,7 +75,6 @@
 	span
 		font-family: "OpenSansBold", sans-serif
 .form_title
-	font-size: 16px;
 	font-family: "OpenSansBold", sans-serif;
 	line-height: 1.2;
 	text-align: center;
@@ -107,10 +109,9 @@ input:-webkit-autofill {
 .alert_message {
 	display: none;
 	text-align: center;
-	font-size: 16px;
 	padding-top: 10px;
 	color: #f00
-	font-family: 'AvenirNextCyrBold', sans-serif;
+	font-family: 'OpenSans', sans-serif;
 }
 .checking {
 	display: table;
@@ -133,6 +134,7 @@ input:-webkit-autofill {
 
 .checking .check_label a {
 	color: rgba(0,0,0,.7)
+	border-bottom: 1px dashed
 }
 
 .checking .check_label:before {

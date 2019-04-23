@@ -1,12 +1,29 @@
+footer
+	.container
+		.contacts
+			a.contact.contact_tel(href="callto:8-929-568-87-50")
+				i.fa.fa-phone(aria-hidden="true")
+				span 8-929-568-87-50
+			a.contact.contact_tel(href="callto:8-499-346-79-46")
+				i.fa.fa-phone(aria-hidden="true")
+				span 8-499-346-79-46
+			a.contact.contact_skype(href="skype:add?support-mastervision")
+				i.fa.fa-skype(aria-hidden="true")
+				span support-mastervision
+			a.contact.contact_email(href="mailto:info@mastervision.su")
+				i.fa.fa-envelope(aria-hidden="true")
+				span info@mastervision.su
+		a.docs_link(href="#!" data-toggle="modal" data-target="#myPolitics") Политика конфединциальности
+		a.docs_link(href="https://mastervision.su/ofertaGrudin.docx") Оферта
 .modal.fade(tabindex="-1" role="dialog")#myModal
 	.modal-dialog(role="document")
 		.modal-content
 			button(type="button" class="close" data-dismiss="modal" aria-label="Close")
 				span(aria-hidden="true") &times;
 			.modal-body
-				h4.form_title Регистрируйтесь на интенсив и получите бонус “Законы счастья”, а также материалы для подготовки к интенсиву
-				form(action="" method="POST").form.modal_form
-					input.mail.modal_mail(placeholder="Ваш E-mail" type="mail")
+				h4.form_title Регистрируйтесь на интенсив и получите материалы для продуктивной работы на каждом из дней интенсива
+				form(action="/thanks/index.html" method="POST").form.modal_form
+					input.mail.modal_mail(placeholder="Ваш E-mail" type="email")
 					button.button.button_mail(type="submit") Участвовать бесплатно
 					.clearfix
 					.checking
@@ -62,3 +79,4 @@
 					p 6.2. К настоящей Политике и отношениям между пользователем и ООО «Master Vision», возникающим в связи с применением Политики конфиденциальности, подлежит применению право Российской Федерации.
 					p 7. Обратная связь. Вопросы и предложения
 					p Все предложения или вопросы по поводу настоящей Политики следует сообщать в Службу поддержки пользователей Mastervision (info@mastervision.su)
+link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")

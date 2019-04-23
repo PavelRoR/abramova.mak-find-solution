@@ -18,29 +18,26 @@ section#main
 				.main_img_container
 					img(src="img/main_img.png", alt="Картинка")
 		.row
-			.col-md-5.col-sm-6
+			.col-md-5
 				.video_wrapper.video_wrapper_main
 					iframe(src="" allowfullscreen)
-			.col-md-7.col-sm-6
+			.col-md-7
 				.main_form_container
 					.main_form_wrapper
 						.when
-							p.date 
-								span 17-19
-								| Апреля
+							.date 
+								p.current_date 19 - 22
+								p.current_month Апреля
 							p.time
 								span 19:00 
-								| по Москве / 
-								span 18:00 
-								| по Киеву
-						h4.form_title Регистрируйтесь на интенсив и получите бонус “Законы счастья”, а также материалы для подготовки к интенсиву
+								| по Москве
+						h4.form_title Регистрируйтесь на интенсив и получите материалы для продуктивной работы на каждом из дней интенсива
 						form(action="/thanks/index.html" method="POST").form.main_form
-							input.mail(placeholder="Ваш E-mail" type="text" name="mail")
-							button.button.button_mail(type="submit") Участвовать бесплатно
+							input.mail.main_mail(placeholder="Ваш E-mail" type="email" name="mail")
+							button.button.button_mail.main_button_main(type="submit") Участвовать бесплатно
 							.clearfix
 							.checking
 								input(type="checkbox" id="check" checked).check
 								label(for="check").check_label Я согласен с 
 									a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
 									|  по 152 - Ф3
-						
